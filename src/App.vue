@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <router-link class="nav-link" to="/home">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link class="nav-link" to="/about">About</router-link>
+      </li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,13 +23,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
