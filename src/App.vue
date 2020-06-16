@@ -1,15 +1,26 @@
 <template>
-  <div id="app">
-     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+<div id="app">
+<header>
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-light" href="#">KKBOX</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <router-link class="nav-link" to="/home">Home</router-link>
+        <a class="nav-link" href="#"><router-link to="/home">Home</router-link></a>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/about">About</router-link>
+        <a class="nav-link" href="#"><router-link to="/link">Link</router-link></a>
       </li>
     </ul>
-    <router-view></router-view>
   </div>
+</nav>
+ </header>
+ <router-view></router-view>
+</div>
 </template>
 
 <script>
